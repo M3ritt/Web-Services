@@ -1,0 +1,10 @@
+logging:
+  level: INFO
+  loggers:
+    com.javaeeeee: DEBUG
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: myuser
+  password: Jam3ritt
+  url: dbc:mysql://localhost:3306/mywebapp
