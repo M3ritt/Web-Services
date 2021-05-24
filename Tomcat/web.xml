@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ 
+	<!-- Creating servlet -->
+	<servlet>
+        <servlet-name>GAccount</servlet-name>
+        <servlet-class>com.mypkg.GAccount</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>CreateAccount</servlet-name>
+        <servlet-class>com.mypkg.CreateAccount</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>GenerateSandwich</servlet-name>
+        <servlet-class>com.mypkg.GenerateSandwich</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ViewFavorites</servlet-name>
+        <servlet-class>com.mypkg.ViewFavorites</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>addFavorite</servlet-name>
+        <servlet-class>com.mypkg.addFavorite</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>RemoveFavorite</servlet-name>
+        <servlet-class>com.mypkg.RemoveFavorite</servlet-class>
+    </servlet>
+	
+	<servlet>
+        <servlet-name>ViewHistory</servlet-name>
+        <servlet-class>com.mypkg.ViewHistory</servlet-class>
+    </servlet>
+	
+	<!-- Mapping -->
+	<servlet-mapping>
+        <servlet-name>CreateAccount</servlet-name>
+        <url-pattern>/CreateAccount/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>GAccount</servlet-name>
+        <url-pattern>/Account/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>GenerateSandwich</servlet-name>
+        <url-pattern>/Account/GenerateSandwich/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>addFavorite</servlet-name>
+        <url-pattern>/Account/addFavorite/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ViewFavorites</servlet-name>
+        <url-pattern>/Account/ViewFavorites/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>RemoveFavorite</servlet-name>
+        <url-pattern>/Account/RemoveFavorite/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ViewHistory</servlet-name>
+        <url-pattern>/Account/ViewHistory/*</url-pattern>
+    </servlet-mapping>
+</web-app>
